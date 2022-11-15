@@ -1,0 +1,31 @@
+{
+  "name": "Trillo",
+  "version": "1.0.0",
+  "description": "Landing page for Trillo",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass":"node-sass sass/main/scss css/style.css-w",
+    "devserver":"live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass":"node-sass sass/main.scss css/style.comp.css -w",
+
+    "prefix:sass":"postcss --use autoprefixer -b 'last 10 version' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-sty;e compressed",
+    "build:css": "npm-run-all compile;sass  prefix:css compress:css"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaurav5677/Natour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaurav5677/Natour/issues"
+  },
+  "homepage": "https://github.com/gaurav5677/Natour#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
