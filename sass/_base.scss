@@ -18,16 +18,34 @@ Grey dark 3:#999;
 
 */
 
-*{
-   margin: 0;
-   padding: 0;
-
-
-
-
-
+//  is is easier to have one place where we collet att hte variables int he one place and that psuedo class is called as root 
+:root{ 
+   --color-primary:#eb2f64;  // -- is used for out custome property aparty from the css property 
+   --color-primary-light:#ff3366;
+   --color-primary-dark:#BA265D;
 }
 
-body{
-   background-color: #eb2f64;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5% // 1 rem = 10px   , 10px / 16px = 62.5%
+}
+
+
+body {
+//   background-color: #eb2f64;
+font-family: 'Open Sans' , sans-serif;
+font-weight: 400;
+line-height: 1.6;
+background-color: liner-gradiant(to right bottom , var(--color-primary-light));
 }
