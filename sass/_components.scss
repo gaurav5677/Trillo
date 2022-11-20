@@ -1,0 +1,47 @@
+///////////////////logo////////////////
+.logo {
+  height: 3.23rem;
+}
+
+////////////////search//////////////////@
+.search {
+  &__input {
+  }
+
+  &__button {
+  }
+
+  &__icon {
+      
+  height: 2.23rem;
+  width: 2.23rem;
+
+  }
+}
+
+/////////////////////////User Nav///////////////////
+///
+///
+.user-nav {
+  &__icon-box {
+  }
+
+  &__icon {
+   height: 2.23rem;
+   width: 2.23rem;
+  }
+
+  &__notification {
+  }
+
+  &__user {
+  }
+
+  &__user-photo {
+   height: 3.23rem;
+   width: 3.23rem;
+  }
+
+  &__user-name {
+  }
+}

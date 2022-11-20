@@ -63,7 +63,8 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  display: flex; }
 
 .content {
   display: flex; }
@@ -75,3 +76,18 @@ body {
 .hotel-view {
   background-color: #fff;
   flex: 1; }
+
+.logo {
+  height: 3.23rem; }
+
+.search__icon {
+  height: 2.23rem;
+  width: 2.23rem; }
+
+.user-nav__icon {
+  height: 2.23rem;
+  width: 2.23rem; }
+
+.user-nav__user-photo {
+  height: 3.23rem;
+  width: 3.23rem; }
