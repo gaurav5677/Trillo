@@ -1,24 +1,66 @@
 ///////////////////logo////////////////
 .logo {
   height: 3.23rem;
+  margin-left: 3rem;
 }
 
 ////////////////search//////////////////@
 .search {
+//   background-color: orangered;
+  flex: 0 0 40%;
 
-   background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all 0.5s;
+    margin-right: -3.5rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder{
+       font-weight: 100;
+       color:var(--color-grey-light-4);
+    }
   }
 
+   &__input:focus +  &__button{
+      background-color: var(--color-grey-light-3);
+      
+   }
+
+
   &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translate((3px));
+    }
   }
 
   &__icon {
-      
-  height: 2.23rem;
-  width: 2.23rem;
-
+    height: 2.23rem;
+    width: 2.23rem;
+    // if we want to change the svg color then simply use the fill property 
+     fill: var(--color-grey-dark-3);
   }
 }
 
@@ -26,14 +68,13 @@
 ///
 ///
 .user-nav {
-
-   background-color: greenyellow;
+  background-color: greenyellow;
   &__icon-box {
   }
 
   &__icon {
-   height: 2.23rem;
-   width: 2.23rem;
+    height: 2.23rem;
+    width: 2.23rem;
   }
 
   &__notification {
@@ -43,8 +84,8 @@
   }
 
   &__user-photo {
-   height: 3.23rem;
-   width: 3.23rem;
+    height: 3.23rem;
+    width: 3.23rem;
   }
 
   &__user-name {
