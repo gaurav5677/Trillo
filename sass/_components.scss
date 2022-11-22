@@ -350,3 +350,37 @@
   }
 
 }
+
+
+
+//////////////\PARAGRAPH /////////////////////
+///
+///
+/// 
+.paragraph:not(:last-of-type){
+
+  //last child applie all of the child while the last of type applies  only to all of the same type of element 
+    margin-bottom: 2rem;
+    // background-color: white;
+}
+
+
+//////////////lIST /////////////////////
+///
+///
+/// 
+
+.list{
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+}
+
+
+//////////////RECOMEND /////////////////////
+///
+///
+/// 
+ 
