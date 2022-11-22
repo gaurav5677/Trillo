@@ -37,7 +37,7 @@
     }
   }
 
-  &__input:focus + &__button {
+  &__input:focus+&__button {
     background-color: var(--color-grey-light-3);
   }
 
@@ -73,7 +73,7 @@
 
   // by doing this below we can select all of the dirct children
 
-  & > * {
+  &>* {
     padding: 0 2rem;
     cursor: pointer;
     height: 100%;
@@ -82,7 +82,7 @@
     align-items: center;
   }
 
-  & > *:hover {
+  &>*:hover {
     background-color: var(--color-grey-light-2);
     // align-self: stretch;
   }
@@ -146,18 +146,18 @@
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0,1) .2s ,background-color .1s;
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
     ;
 
   }
 
   &__item:hover::before,
   &__item--active::before {
-    transform: scaleY(1); 
+    transform: scaleY(1);
     width: 100%;
   }
 
-  &__item:active::before{
+  &__item:active::before {
     background-color: var(--color-primary-light);
   }
 
@@ -173,6 +173,7 @@
     display: flex;
     align-items: center;
   }
+
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -183,32 +184,90 @@
   //////////////Legal text/////////////////////
   ///
   ///
- 
+
 
 }
 
-.sidebar{
+.sidebar {
   .legal_text {
 
-  font-size: 1.3rem;
-  color: var(--color-grey-light-4);
-  text-align: center;
-  padding: 2.5rem;
-}
-}
-
-
-  //////////////gallery /////////////////////
-  ///
-  ///
-  /// 
-  
-  .gallery{
-
-    display: flex;
-
-    &__photo{
-      width: 100%;
-      display: block;
-    }
+    font-size: 1.3rem;
+    color: var(--color-grey-light-4);
+    text-align: center;
+    padding: 2.5rem;
   }
+}
+
+
+
+//////////////gallery /////////////////////
+///
+///
+/// 
+
+.gallery {
+
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.overview {
+  // margin: auto;
+  display: flex;
+  // justify-content: space-between;
+
+ 
+  &__heading {
+
+  }
+
+  &__stars{
+    // flex: 1;
+    margin-right: auto;
+    background-color: aquamarine;
+
+  }
+
+  &__icon-star,
+  &__icon-location {
+
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+
+  }
+
+  &__location {
+    // flex: 1;   // this will occupie all the space; 
+
+  }
+
+  &__rating-average 
+  {
+
+
+  }
+
+  &__rating-count {
+
+
+
+  }
+
+}
