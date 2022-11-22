@@ -279,13 +279,19 @@
     background-color: var(--color-primary);
     margin-left: 3rem;
     color: white;
-    align-items: stretch;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
   }
 
   &__rating-average {
-    font-size: 2.25rem;
+    font-size: 2.25rem; 
     font-weight: 300;
+    margin-bottom: -50px;
   }
 
   &__rating-count {
