@@ -117,7 +117,7 @@
   &__user-photo {
     height: 3.23rem;
     // width: 3.23rem;
-    border-radius: 50%;
+    border-radius: 50px;
     margin-right: 1rem;
   }
 }
@@ -183,10 +183,32 @@
   //////////////Legal text/////////////////////
   ///
   ///
-  .legal {
-    font-size: 1.3rem;
-    color: var(--color-grey-light-4);
-    text-align: center;
-    padding: 2.5rem;
-  }
+ 
+
 }
+
+.sidebar{
+  .legal_text {
+
+  font-size: 1.3rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5rem;
+}
+}
+
+
+  //////////////gallery /////////////////////
+  ///
+  ///
+  /// 
+  
+  .gallery{
+
+    display: flex;
+
+    &__photo{
+      width: 100%;
+      display: block;
+    }
+  }
