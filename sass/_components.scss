@@ -230,18 +230,27 @@
 .overview {
   // margin: auto;
   display: flex;
+  align-items: center;
+
   // justify-content: space-between;
 
- 
+  border-bottom: 3px solid var(--color-grey-light-2);
+
   &__heading {
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+
 
   }
 
-  &__stars{
+  &__stars {
     // flex: 1;
     margin-right: auto;
-    background-color: aquamarine;
-
+    // background-color: aquamarine;
+    // 
   }
 
   &__icon-star,
@@ -258,16 +267,48 @@
 
   }
 
-  &__rating-average 
-  {
+  &__rating-average {}
 
+  &__rating-count {}
 
+}
+
+// /////////////////////button //////////////@at-root
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 3px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .8s;
+
+  &:hover {
+    color: var(--color-grey-dark-1);
   }
 
-  &__rating-count {
-
-
-
+  &:focus{
+    outline: none;
   }
+}
+
+@keyframes pulsate{
+   0%{
+         transform: scale(1);
+    
+   }
+
+   50%{
+    transform: scale(1.05);
+     box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .25);
+
+   }
+
+   100%{
+
+
+   }
 
 }
