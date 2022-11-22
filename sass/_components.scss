@@ -234,8 +234,7 @@
 
   // justify-content: space-between;
 
-  border-bottom: 3px solid var(--color-grey-light-2);
-
+  border-bottom: var(--line);
   &__heading {
     font-size: 2.25rem;
     font-weight: 500;
@@ -289,7 +288,7 @@
   }
 
   &__rating-average {
-    font-size: 2.25rem; 
+    font-size: 2.25rem;  
     font-weight: 300;
     margin-bottom: -50px;
   }
