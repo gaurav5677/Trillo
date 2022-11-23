@@ -98,7 +98,10 @@ body {
   padding: 3rem; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .logo {
   height: 3.23rem;
@@ -279,7 +282,7 @@ body {
   transition: all .8s; }
   .btn-inline span {
     margin-left: 3px;
-    transition: all 0.5s;
+    transition: margin-left 0.5s;
     font-weight: 700; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1); }

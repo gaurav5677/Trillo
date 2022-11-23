@@ -314,10 +314,11 @@
   background-color: transparent;
   cursor: pointer;
   transition: all .8s;
+  // text-align: center;
 
   & span{
     margin-left: 3px;
-    transition: all 0.5s;
+    transition: margin-left 0.5s;
     font-weight: 700;
   }
 
@@ -527,6 +528,8 @@
     color: var(--color-grey-light-2 );
     z-index: 1;
    }
+   
 
+   
 
 }
